@@ -8,12 +8,20 @@ int main(){
 	cout<<"Podaj ilość liczb";
 	cin>amount;
 
-	int arr[num];
+	int arr[amount];
 
-	for(int i=0; int=amount; i++){
-	cout<<"Podaj numer";
+	cout<<"Podaj numery:";
+
+	for(int i=0; i = amount; i++){
 	cin >> arr[i];
 	}
-	bubbleSort(arr, n);
+	bubbleSort(arr, amount);
+
+	cout<<"Posortowane liczby:";
+
+	for(int i = 0; i < amount; i++)
+	{
+	cout << arr[i] <<" ";
+	}
 	return 0;
 }
